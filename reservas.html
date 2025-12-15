@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="estilos/reservas.css">
+    <script src="JavaScript/reservas.js"></script>
+
+</head>
+<body>
+
+     <header class="header">
+
+    <div class="logo-area">
+        <img src="imagenes/logo-sharo.jpg" alt="Logo SHARO">
+        
+        <h1>LOS SABORES DE SHARO</h1>
+    </div>
+
+    <nav class="menu">
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="presentacion.html">Presentación</a></li>
+            <li><a href="carta.html">Carta</a></li>
+            <li><a href="reservas.html">Reservas</a></li>
+            <li><a href="ubicacion.html">Ubicación</a></li>
+        </ul>
+    </nav>
+    
+</header>
+    <!--recervas-->
+<section class="reservas">
+    <div class="reservas-contenido">
+        <h2>Reserva tu mesa</h2>
+
+        <form class="form-reservas" id="form-reservas">
+            <input type="text" placeholder="Nombre completo" required>
+            <input type="tel" placeholder="Teléfono" required>
+            <input type="email" placeholder="Correo electrónico">
+            <input type="date" required>
+            <input type="time" required>
+            <input type="number" placeholder="Número de personas" min="1" required>
+
+            <textarea placeholder="Mensaje adicional (opcional)"></textarea>
+
+            <button type="submit">Reservar ahora</button>
+        </form>
+    </div>
+</section>
+  <!-- FOOTER -->
+    <footer>
+        <p>© 2025 Los Sabores de SHARO | Tradición que se disfruta</p>
+    </footer>
+</body>
+</html>

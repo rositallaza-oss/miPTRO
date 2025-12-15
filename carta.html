@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carta | SHARO</title>
+    <link rel="stylesheet" href="estilos/carta.css">
+    <script src="JavaScript/JavaScrpt.js"></script>
+</head>
+<body>
+
+    <!-- ====== NAVEGADOR ====== -->
+    <header class="header">
+    <div class="logo-area">
+        <img src="imagenes/logo-sharo.jpg" alt="Logo SHARO">
+        <h1>LOS SABORES DE SHARO</h1>
+    </div>
+
+    <nav class="menu">
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="presentacion.html">Presentación</a></li>
+            <li><a href="carta.html">Carta</a></li>
+            <li><a href="reservas.html">Reservas</a></li>
+            <li><a href="ubicacion.html">Ubicación</a></li>
+        </ul>
+    </nav>
+    
+</header>
+    <!-- ====== CONTENIDO CARTA ====== -->
+   <section class="carta">
+    <h2>Nuestra Carta</h2>
+
+    <div class="categorias">
+
+        <!-- CEVICHES -->
+        <div class="categoria">
+            <h3>Ceviches</h3>
+
+            <div class="plato">
+                <img src="imagenes/cevichop clasico.jpg">
+                <p>Cevichop Clasico</p>
+                <span>S/ 25</span>
+                <button onclick="agregarCarrito('Cevichop Clasico',25)">Pedir</button>
+            </div>
+
+            <div class="plato">
+                <img src="imagenes/ceviche mixto.jpg">
+                <p>Ceviche Mixto</p>
+                <span>S/ 30</span>
+                <button onclick="agregarCarrito('Ceviche Mixto',30)">Pedir</button>
+            </div>
+
+            <div class="plato">
+                <img src="imagenes/ceviche-de-jurel.jpg">
+                <p>Ceviche de Jurel</p>
+                <span>S/ 35</span>
+                <button onclick="agregarCarrito('Ceviche de Jurel',35)">Pedir</button>
+            </div>
+        </div>
+
+        <!-- TRÍOS -->
+        <div class="categoria">
+            <h3>Tríos y Arroz con Mariscos</h3>
+
+            <div class="plato">
+                <img src="imagenes/TRIO-MARINO.jpg">
+                <p>Trío Marino</p>
+                <span>S/ 38</span>
+                <button onclick="agregarCarrito('Trío Marino',38)">Pedir</button>
+            </div>
+
+            <div class="plato">
+                <img src="imagenes/Arroz_con_mariscos.jpg">
+                <p>Arroz con Marisco</p>
+                <span>S/ 40</span>
+                <button onclick="agregarCarrito('Arroz con Marisco',40)">Pedir</button>
+            </div>
+
+            <div class="plato">
+                <img src="imagenes/duo marino.jpg">
+                <p>Duo Marino</p>
+                <span>S/ 36</span>
+                <button onclick="agregarCarrito('Duo Marino',36)">Pedir</button>
+            </div>
+        </div>
+
+        <!-- MIXTAS -->
+        <div class="categoria">
+            <h3>Mixtas</h3>
+
+            <div class="plato">
+                <img src="imagenes/jalea mixta.jpg">
+                <p>Jalea Mixta</p>
+                <span>S/ 35</span>
+                <button onclick="agregarCarrito('Jalea Mixta',35)">Pedir</button>
+            </div>
+
+            <div class="plato">
+                <img src="imagenes/Bistec-a-lo-pobre-.jpg">
+                <p>Bistec a lo Pobre</p>
+                <span>S/ 34</span>
+                <button onclick="agregarCarrito('Bistec a lopobre-',34)">Pedir</button>
+            </div>
+
+            <div class="plato">
+                <img src="imagenes/parrihuela.webp">
+                <p>Parihuela Criminal</p>
+                <span>S/ 42</span>
+                <button onclick="agregarCarrito('Parihuela Criminal',42)">Pedir</button>
+            </div>
+        </div>
+
+        <!-- REFRESCOS -->
+        <div class="categoria">
+            <h3>Refrescos</h3>
+
+            <div class="plato">
+                <img src="imagenes/chicha.jpg">
+                <p>Chicha Morada</p>
+                <span>S/ 12</span>
+                <button onclick="agregarCarrito('Chicha Morada',6)">Pedir</button>
+            </div>
+
+            <div class="plato">
+                <img src="imagenes/limonada.jpg">
+                <p>Limonada</p>
+                <span>S/ 12</span>
+                <button onclick="agregarCarrito('Limonada',5)">Pedir</button>
+            </div>
+
+            <div class="plato">
+                <img src="imagenes/maracuyar.jpg">
+                <p>Maracuyá</p>
+                <span>S/ 10</span>
+                <button onclick="agregarCarrito('Maracuyá',6)">Pedir</button>
+            </div>
+        </div>
+
+    </div>
+</section>
+<!-- ===== CARRITO ===== -->
+<section class="carrito">
+    <h2>🛒 Carrito de pedidos</h2>
+
+    <ul id="lista-carrito"></ul>
+
+    <p><strong>Total:</strong> S/ <span id="total">0</span></p>
+</section>
+ <!-- FOOTER -->
+    <footer>
+        <p>© 2025 Los Sabores de SHARO | Tradición que se disfruta</p>
+    </footer>
+ 
+
+</body>
+</html>

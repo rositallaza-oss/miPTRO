@@ -1,0 +1,118 @@
+/* ================= NAVEGADOR ================= */
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    background-color: #1c1c1c;
+}
+
+.logo-area {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.logo-area img {
+    width: 60px;
+    height: 60px;
+}
+
+.logo-area h1 {
+    color: white;
+    font-size: 22px;
+}
+
+.menu ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 8px 12px;
+    border-radius: 6px;
+}
+
+.menu ul li a:hover {
+    background-color: #444;
+}
+
+/* ================= RESERVAS ================= */
+.reservas {
+    min-height: 90vh;
+    background-image: url("../imagenes/reservas-1.webp");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+}
+
+.reservas-contenido {
+    width: 100%;
+    max-width: 500px;
+    background-color: rgba(110, 196, 198, 0.95);
+    padding: 35px;
+    border-radius: 18px;
+    box-shadow: 0 12px 30px rgba(0,0,0,0.2);
+    text-align: center;
+}
+
+.reservas-contenido h2 {
+    font-size: 32px;
+    margin-bottom: 25px;
+    color: beige;
+}
+
+.form-reservas {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.form-reservas input,
+.form-reservas textarea {
+    padding: 12px;
+    font-size: 15px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+}
+
+.form-reservas textarea {
+    resize: none;
+    height: 90px;
+}
+
+.form-reservas button {
+    margin-top: 10px;
+    padding: 14px;
+    background-color: #e67e22;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.form-reservas button:hover {
+    background-color: #cf5f00;
+    transform: scale(1.05);
+}
+footer{
+            
+    color: #0a0a0a;
+    text-align: center;
+    padding: 10px;
+    margin-top: 40px;
+     background: linear-gradient(90deg,#2bb0e5,#82e2e3);
+}

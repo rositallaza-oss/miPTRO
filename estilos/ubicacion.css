@@ -1,0 +1,133 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background: 
+        linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)),
+        url("../imagenes/ubicacion.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: #160404;
+}
+
+
+/* ================= NAVEGADOR ================= */
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    background-color: #1c1c1c;
+}
+
+.logo-area {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.logo-area img {
+    width: 60px;
+    height: 60px;
+}
+
+.logo-area h1 {
+    color: white;
+    font-size: 22px;
+}
+
+.menu ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 8px 12px;
+    border-radius: 6px;
+}
+
+.menu ul li a:hover {
+    background-color: #444;
+}
+
+/* =========================
+   SECCIÓN UBICACIÓN
+========================= */
+.mapa {
+    display: flex;
+    flex-direction: column; /* título, texto y mapa en columna */
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.9); /* fondo semi-transparente para destacar */
+    padding: 30px 20px;
+    border-radius: 15px;
+    max-width: 900px;
+    margin: 30px auto; /* centra la sección en la página */
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+.mapa h2 {
+    font-size: 28px;
+    margin-bottom: 15px;
+    color: #2f2ba8; /* color del título */
+    text-align: center;
+}
+
+.mapa p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.mapa .map {
+    width: 100%;
+    max-width: 800px;
+    height: 450px;
+    border: 0;
+    border-radius: 10px;
+}
+/* ===== FOOTER ===== */
+footer{
+            
+color: #0a0a0a;
+text-align: center;
+padding: 10px;
+ margin-top: 40px;
+background: linear-gradient(90deg,#2bb0e5,#82e2e3);
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+@media (max-width: 768px) {
+    .mapa h2 {
+        font-size: 24px;
+    }
+
+    .mapa p {
+        font-size: 15px;
+    }
+
+    .mapa .map {
+        height: 350px;
+    }
+}
+
+@media (max-width: 480px) {
+    .mapa h2 {
+        font-size: 20px;
+    }
+
+    .mapa p {
+        font-size: 14px;
+    }
+
+    .mapa .map {
+        height: 250px;
+    }
+}
